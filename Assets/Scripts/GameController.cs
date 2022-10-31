@@ -55,4 +55,8 @@ public class GameController : MonoBehaviour
     {
         PlayerBehaviorInstance.Speed = 0;
     }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

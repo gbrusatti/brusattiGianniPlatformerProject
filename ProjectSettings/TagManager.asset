@@ -8,6 +8,8 @@ TagManager:
   - Platforms
   - Spikes
   - RedSlime
+  - LoadScene2
+  - EndGame
   layers:
   - Default
   - TransparentFX

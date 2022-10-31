@@ -1,12 +1,10 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SpikeBehavior : MonoBehaviour
+public class OutcomeScreenBehavior : MonoBehaviour
 {
-    
     // Start is called before the first frame update
     void Start()
     {
@@ -17,5 +15,13 @@ public class SpikeBehavior : MonoBehaviour
     void Update()
     {
         
+    }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+    public void ResetGame()
+    {
+        SceneManager.LoadScene(1);
     }
 }

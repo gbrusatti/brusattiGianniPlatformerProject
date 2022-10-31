@@ -152,15 +152,20 @@ public class PlayerBehavior : MonoBehaviour
         if (collision.gameObject.tag == "RedSlime")
         {
             gc.UpdateLives();
-
+            transform.position = startPos;
         }
         if (collision.gameObject.tag == "LoadScene")
         {
-            //****add this in at a later time when level 2 is done****SceneManager.LoadScene(1);
-            gc.WinGame();
+            SceneManager.LoadScene(2);            
         }
+        if (collision.gameObject.tag == "LoadScene2")
+        {
+            SceneManager.LoadScene(3);
+        }
+        if (collision.gameObject.tag == "EndGame")
+            gc.WinGame();
     }
-    IEnumerator Dash (float direction)//used for the "dash" (makes the dash actually dash)
+    IEnumerator Dash (float direction)//used for the "dash" (IEnumerator makes the dash actually dash)
     {
         isDashing = true;
         rb2d.velocity = new Vector2(rb2d.velocity.x, 0f);

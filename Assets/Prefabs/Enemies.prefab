@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b17992f70d288ce429c9f071bc883952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightDir: 0
+  rightDir: 1
   leftDir: 0
 --- !u!4 &7635127001662905802 stripped
 Transform:

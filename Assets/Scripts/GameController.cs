@@ -17,7 +17,7 @@ public class GameController : MonoBehaviour
     public PlayerBehavior PlayerBehaviorInstance;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -43,13 +43,15 @@ public class GameController : MonoBehaviour
     }
     public void LoseGame()
     {
-        StopGame();
         LoseScreen.SetActive(true);
+        StopGame();
+        
     }
     public void WinGame()
     {
-        StopGame();
         WinScreen.SetActive(true);
+        StopGame();
+        
     }
     public void StopGame()
     {

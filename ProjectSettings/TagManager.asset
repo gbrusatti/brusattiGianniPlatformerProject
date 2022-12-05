@@ -10,6 +10,7 @@ TagManager:
   - RedSlime
   - LoadScene2
   - EndGame
+  - LoadScene3
   layers:
   - Default
   - TransparentFX

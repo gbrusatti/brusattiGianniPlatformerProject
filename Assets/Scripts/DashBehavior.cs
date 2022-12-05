@@ -22,6 +22,7 @@ public class DashBehavior : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         gc = GameObject.Find("GameController").GetComponent<GameController>();
+
     }
 
     // Update is called once per frame
@@ -40,6 +41,8 @@ public class DashBehavior : MonoBehaviour
             }
 
             lastKeyCode = KeyCode.A;
+
+
         }
         if (Input.GetKeyDown(KeyCode.D)) //Right Dash
         {
@@ -50,10 +53,12 @@ public class DashBehavior : MonoBehaviour
             }
             else
             {
-                doubleTapTime = Time.time + 0.1f;
+                doubleTapTime = Time.time + 0.3f;
             }
 
             lastKeyCode = KeyCode.D;
+
+
         }
     }
     private void FixedUpdate()
@@ -73,5 +78,12 @@ public class DashBehavior : MonoBehaviour
         yield return new WaitForSeconds(0.4f);
         isDashing = false;
         rb2d.gravityScale = gravity;
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Platforms")
+        {
+
+        }
     }
 }

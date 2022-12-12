@@ -7014,6 +7014,7 @@ GameObject:
   - component: {fileID: 1718230174}
   - component: {fileID: 1718230178}
   - component: {fileID: 1718230179}
+  - component: {fileID: 1718230180}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -7033,8 +7034,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b0a8c99b29e9d148acacb491b2fad70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knop: {fileID: 0}
-  myAnimator: {fileID: 0}
+  knop: {fileID: 1718230180}
+  myAnimator: {fileID: 1718230180}
   Speed: 5
   SUp: 0
   SDown: 0
@@ -7121,7 +7122,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1718230172}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.43, y: -2.25, z: 0}
+  m_LocalPosition: {x: -6.1, y: -2.25, z: 0}
   m_LocalScale: {x: 4.39, y: 4.555, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7167,6 +7168,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.21, y: 0.16}
   m_EdgeRadius: 0
+--- !u!95 &1718230180
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718230172}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f84910a320ab66a49bf11edd2e5c9a55, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1813312715
 GameObject:
   m_ObjectHideFlags: 0
@@ -7780,7 +7801,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8f65a71da4e7d0445b342603f3cd220e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.637
   m_Pitch: 1
   Loop: 0
   Mute: 0

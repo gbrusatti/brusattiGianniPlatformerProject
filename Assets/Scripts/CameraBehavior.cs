@@ -7,7 +7,7 @@ public class CameraBehavior : MonoBehaviour
     private GameObject Player;
     void Start()
     {
-        Player = GameObject.Find("Player");
+        Player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
